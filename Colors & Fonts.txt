@@ -1,0 +1,5 @@
+Body Color : #F8F7F4
+
+Section Color : #FFDA7A
+
+Button Bg : #565564, #FFFFFF
