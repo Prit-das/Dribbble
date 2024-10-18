@@ -1035,7 +1035,13 @@ a:focus {
 @font-face {
   font-family: 'Source-Serif';
 
-  src: url('./fonts/Source-Serif.ttf') format('truetype');
+  /* src: url('./fonts/Source-Serif.ttf') format('truetype'); */
+
+  /* src: url('fonts/Source-Serif.ttf') format('truetype'); */
+
+  /* src: url('/fonts/Source-Serif.ttf') format('truetype'); */
+
+  src: url('../fonts/Source-Serif.ttf') format('truetype');
 
   font-weight: 400;
 
@@ -1045,7 +1051,7 @@ a:focus {
 @font-face {
   font-family: 'Mona-Sans';
 
-  src: url('./fonts/Mona-Sans.ttf') format('truetype');
+  src: url('../fonts/Mona-Sans.ttf') format('truetype');
 
   font-weight: 400;
 
