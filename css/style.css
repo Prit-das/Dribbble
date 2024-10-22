@@ -967,11 +967,11 @@ a:focus {
 }
 
 .font-MonaSans {
-  font-family: Mona-Sans, sans-serif;
+  font-family: MonaSans, sans-serif;
 }
 
 .font-SourceSerif {
-  font-family: Source-Serif, sans-serif;
+  font-family: SourceSerif, sans-serif;
 }
 
 .text-5xl {
@@ -1033,17 +1033,9 @@ a:focus {
 /* Custom font declaration */
 
 @font-face {
-  font-family: 'Source-Serif';
+  font-family: 'SourceSerif';
 
-  /* src: url('./fonts/Source-Serif.ttf') format('truetype'); */
-
-  /* src: url('/fonts/Source-Serif.ttf') format('truetype'); */
-
-  /* src: url('../fonts/Source-Serif.ttf') format('truetype'); */
-
-  /* src: url('/fonts/Source-Serif.ttf') format('truetype'); */
-
-  src: url('fonts/Source-Serif.ttf') format('truetype');
+  src: url('/fonts/Source-Serif.ttf') format('truetype');
 
   font-weight: 400;
 
@@ -1051,7 +1043,7 @@ a:focus {
 }
 
 @font-face {
-  font-family: 'Mona-Sans';
+  font-family: 'MonaSans';
 
   src: url('/fonts/Mona-Sans.ttf') format('truetype');
 
