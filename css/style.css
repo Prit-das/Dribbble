@@ -1041,7 +1041,9 @@ a:focus {
 
   /* src: url('../fonts/Source-Serif.ttf') format('truetype'); */
 
-  src: url('/Dribbble/fonts/Source-Serif.ttf') format('truetype');
+  src: url('/fonts/Source-Serif.ttf') format('truetype');
+
+  /* src: url('fonts/Source-Serif.ttf') format('truetype'); */
 
   font-weight: 400;
 
