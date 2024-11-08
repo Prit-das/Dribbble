@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Effect</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html, body {
+        height: 100%;
+        width: 100%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .transition-container {
+        position: relative;
+        height: 100px;
+        width: 100px;
+        z-index: 1; /* Higher z-index than the pseudo-element */
+        cursor: pointer;
+    }
+    /* Inner div to simulate the foreground */
+    .foreground {
+        position: relative;
+        height: 100px;
+        width: 100px;
+        background-color: black;
+        box-shadow: 0px 0px 3px white;
+        border-radius: 5px;
+        z-index: 1; /* Ensure it appears above the background pseudo-element */
+    }
+    /* Pseudo-element as background behind the container */
+    .transition-container:before {
+        content: "";
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        top: -5px;
+        right: -5px;
+        background-color: rgba(112, 128, 144, 0.8);
+        box-shadow: 0px 0px 3px white;
+        border-radius: 5px;
+        z-index: 0; /* Lower z-index to appear behind */
+        transition: all 0.3s ease;
+    }
+    /* Pseudo-element Transition for before*/
+    .transition-container:hover::before{
+        top: -10px;
+        right: -10px;
+    }
+    /* Pseudo-element as background behind the container */
+    .transition-container:after {
+        content: "";
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        top: -10px;
+        right: -10px;
+        background-color: rgba(220, 20, 60, 0.8);
+        box-shadow: 0px 0px 3px white;
+        border-radius: 5px;
+        z-index: -1; /* Lower z-index to appear behind */
+        transition: all 0.3s ease;
+    }
+    /* Pseudo-element Transition for after*/
+    .transition-container:hover::after{
+        top: -20px;
+        right: -20px;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="transition-container">
+        <div class="foreground"></div>
+    </div>
+</body>
+</html>
